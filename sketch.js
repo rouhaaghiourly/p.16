@@ -87,15 +87,15 @@ function draw() {
   //if (arrowGroup.Collide(redB)) 
   //if (arrowGroup.isCollide(redB)) 
   //if(frameCount>700)//comment this line after selecting the solution
- // {
-   // redB.destroyEach();
-   // gameState=END; 
-  // }
+    {
+    redB.destroyEach();
+    gameState=END; 
+   }
  
-  //if (gameState === END) {
- // bow.destroy();
- // scene.velocityX = 0;
-//}
+  if (gameState === END) {
+  bow.destroy();
+  scene.velocityX = 0;
+}
 
 
  if (arrowGroup.isTouching(greenB)) {
